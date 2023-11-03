@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.reflowhq.com/v2/toolkit.min.css">
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -37,24 +39,64 @@
               </ul>
             </li>
           </ul>
-          <form class="d-flex">
-            <a href="./cart.html" class="btn btn-outline-dark" type="submit">
-              <i class="bi bi-cart fill-1"></i>
-              <div class="d-inline" data-reflow-type="view-cart" data-reflow-summary-type="dropdown">Keranjang saya
-              </div>
-            </a>
-          </form>
+          <div class="d-inline" data-reflow-type="view-cart" data-reflow-summary-type="sidebar"
+            data-reflow-shoppingcart-url="/cart.html">
+            <i class="bi bi-cart fill-1"></i>
+            Keranjang
+          </div>
         </div>
       </div>
     </nav>
 
     <!-- <main class="container my-5"> -->
-    <main class="container pt-5">
+    <main class="container py-5">
       
-      
+      <div class="row">
+        <div class="col ms-auto">
+          <section class="text-center mb-3">
+            <h1>Tentang Kami</h1>
+            <p>Selamat datang di <span class="fw-bold">Shopping Online</span>, tempat Anda dapat menemukan sepatu yang sempurna untuk setiap langkah Anda. Kami
+            percaya bahwa sepatu adalah lebih dari sekadar alas kaki - mereka adalah ekspresi dari siapa Anda.</p>
+          </section>
+          <section class="text-center mb-5">
+            <h2>Visi Kami</h2>
+            <p>Di Shopping Online, visi kami adalah untuk membantu setiap orang menemukan sepatu yang tidak hanya nyaman dan
+            berkualitas, tetapi juga mencerminkan gaya dan kepribadian mereka. Dengan tagline kami, “Cari Kebutuhan Fashion Anda
+            Disini, Tampil Bergaya, Langkah Pasti”, kami berkomitmen untuk menyediakan Anda dengan pilihan sepatu terbaik yang akan
+            membuat Anda merasa percaya diri dan nyaman di setiap langkah.</p>
+          </section>
+          <section class="text-center">
+            <h3>Apa yang Kami Tawarkan</h3>
+            <p>Kami menawarkan berbagai jenis sepatu, mulai dari sepatu formal hingga sepatu olahraga, semua dari merek terkemuka dan
+            desainer berbakat. Setiap pasangan sepatu yang kami jual dipilih dengan hati-hati untuk memastikan bahwa kami hanya
+            menyediakan produk yang kami percaya.</p>
+          </section>
+          <section class="text-center">
+            <h3>Mengapa Memilih Kami</h3>
+            <p>Ketika Anda berbelanja di Shopping Online, Anda tidak hanya mendapatkan produk berkualitas tinggi, tetapi juga layanan
+            pelanggan yang luar biasa. Tim kami selalu siap untuk membantu Anda menemukan sepatu yang sempurna dan menjawab
+            pertanyaan apa pun yang mungkin Anda miliki.</p>
+          </section>
+          <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Terima Kasih!</h4>
+            <p>Terima kasih telah memilih Shopping Online. Kami berharap dapat membantu Anda “Tampil Bergaya, Langkah Pasti”!</p>
+          </div>
+        </div>
+      </div>
+
 
     </main>
 
+    <div class="floating-btn position-fixed bottom-0 start-0 p-3">
+      <div class="m-0" data-reflow-type="view-cart" data-reflow-summary-type="sidebar"
+        data-reflow-shoppingcart-url="/cart.html">
+        <button class="btn btn-primary rounded-circle" type="button">
+          <i class="bi bi-cart fill-1"></i>
+        </button>
+      </div>
+    </div>
+
+    
     <script src="https://cdn.reflowhq.com/v2/toolkit.min.js" data-reflow-store="314184390"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

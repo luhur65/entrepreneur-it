@@ -5,8 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shopping Cart</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.1/dist/litera/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://cdn.reflowhq.com/v2/toolkit.min.css" rel="stylesheet" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -36,20 +39,30 @@
               </ul>
             </li>
           </ul>
-          <form class="d-flex">
-            <a href="./cart.html" class="btn btn-outline-dark" type="submit">
-              <i class="bi bi-cart fill-1"></i>
-              <div class="d-inline" data-reflow-type="view-cart" data-reflow-summary-type="dropdown">Keranjang saya</div>
-            </a>
-          </form>
+          <div class="d-inline" data-reflow-type="view-cart" data-reflow-summary-type="sidebar"
+            data-reflow-shoppingcart-url="/cart.html">
+            <i class="bi bi-cart fill-1"></i>
+            Keranjang
+          </div>
         </div>
       </div>
     </nav>
 
-    <div class="container pt-5 d-flex flex-column justify-content-center align-items-center">
+    <div class="container py-5 d-flex flex-column justify-content-center align-items-center">
       <div data-reflow-type="shopping-cart"
-      data-reflow-success-url="./success.html"></div>
+      data-reflow-success-url="./success.html"
+      ></div>
     </div>
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+      <p class="m-0 text-center text-white">
+        Copyright &copy; Shopping Online 2023 <br>
+        <span class="font-monospace">
+          Made with ❤️ by <a class="text-white text-decoration-none" href="">Us</a>
+        </span>
+      </p>
+    </footer>
 
     <script src="https://cdn.reflowhq.com/v2/toolkit.min.js" data-reflow-store="314184390" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

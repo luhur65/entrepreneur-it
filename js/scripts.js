@@ -10,12 +10,5 @@
 // tambahkan parentElement dengan class .card dan .card-body
 document.addEventListener('DOMContentLoaded', function () {
 
-    const refProduct = document.querySelectorAll('a.ref-product');
-    refProduct.forEach((e) => {
-        e.parentElement.classList.add('card', 'card-body');
-    });
-
-    console.log('DOM fully loaded and parsed')
-    console.log(refProduct)
     
 });
